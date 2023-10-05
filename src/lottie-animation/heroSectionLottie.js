@@ -1,8 +1,18 @@
-var animation = bodymovin.loadAnimation({
-  container: document.getElementById('hero-section'), // Required
-  path: 'src/lottie-animation/animation/animation.json', // Required
-  renderer: 'svg', // Required
-  loop: true, // Optional
-  autoplay: true, // Optional
-  name: "Hello World", // Name for future reference. Optional.
+const heroBg = document.getElementById("hero-section");
+const heroFace = document.getElementById("hero-face");
+
+let heroBgLottie = bodymovin.loadAnimation({
+  container: heroBg,
+  path: 'src/lottie-animation/animation/bg-hero.json',
+  renderer: 'svg',
+  loop: false,
+  autoplay: true,
+})
+let heroFaceLottie = bodymovin.loadAnimation({
+  container: heroFace,
+  path: 'src/lottie-animation/animation/hero-face.json',
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  name: "Hero Bg",
 })

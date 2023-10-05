@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700;1,400&family=Josefin+Slab:wght@400;700&display=swap");
+@import url("node_modules/hamburgers/dist/hamburgers.css");
+
 
 @layer components {
   #primary-nav li > a {
@@ -11,5 +13,8 @@
     &.active {
       @apply after:origin-left after:scale-x-100;
     }
+  }
+  #hero-section > svg > g > g {
+    @apply h-full;
   }
 }

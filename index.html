@@ -7,12 +7,20 @@
   <title>Gabriel Ferreira -> Portfolio</title>
 
   <link rel="stylesheet" href="./src/tailwindcss/tailwindcssOutput.css">
+  <link rel="stylesheet" href="./node_modules/hamburgers/dist/hamburgers.css">
 </head>
 
 <body class="flex max-h-screen overflow-hidden">
+  <button id="openHeader" aria-label="open header" class="hamburger hamburger--slider fixed top-2 left-1 z-[2000]"
+    type="button">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </button>
 
   <header aria-hidden="false" aria-label="Primary Header"
-    class="bg-background-800 flex-1 px-6 py-12 max-w-xs h-screen flex flex-col items-center justify-between">
+    class="fixed z-[1000] translate-x-[-100%] bg-background-800 flex-1 px-6 py-12 max-w-xs h-screen flex flex-col items-center justify-between">
+
     <figure>
       <img src="./public/profilePic.jpg" alt="profile picture"
         class="max-w-[150px] aspect-square mx-auto object-cover rounded-full">
@@ -21,8 +29,8 @@
     </figure>
     <nav aria-label="Primary Navigation">
       <ul id="primary-nav" class="text-text-50 font-text text-xl">
-        <li class="mt-4"><a href="#" class="active">Home</a></li>
-        <li class="mt-4"><a href="#">About</a></li>
+        <li class="mt-4"><a href="#home" class="active">Home</a></li>
+        <li class="mt-4"><a href="#2">About</a></li>
         <li class="mt-4"><a href="#">Skills</a></li>
         <li class="mt-4"><a href="#">Education</a></li>
         <li class="mt-4"><a href="#">Work</a></li>
@@ -34,12 +42,28 @@
       Website by Gabriel
       Ferreira</p>
   </header>
-  <main class="bg-background-950 flex-1 h-screen overflow-y-scroll">
-    <section class="h-[200vh]">
-      <div id="hero-section"></div>
+
+  <main class="bg-background-main flex-1 h-screen overflow-y-scroll scroll-smooth">
+
+    <section class="h-screen relative flex items-center justify-center p-4" id="home">
+      <div id="hero-section" class="absolute inset-0 opacity-10 pointer-events-none"></div>
+      <div class="flex items-center justify-center flex-wrap">
+        <div>
+          <h1 class="text-text-50 text-3xl font-title">I am a <span class="text-accent-main">Web Developer</span></h1>
+          <h3 class="text-text-50 text-xl font-title my-2">100% HTML CSS JavaScript</h3>
+          <a href="#"
+            class="text-text-50 font-text text-lg border-2 border-solid border-button-main block w-fit p-2 mx-auto rounded-md transition-all duration-150 ease-linear active:scale-90 active:opacity-75">Portfolio</a>
+        </div>
+        <div id="hero-face" class="max-w-[270px] pointer-events-none"></div>
+      </div>
     </section>
+    <section class="bg-red-100 h-screen" id="2"></section>
   </main>
 
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="./src/Header/openHeader.js"></script>
   <script src="./src/Header/navLink.js"></script>
   <script src="./src/Header/copyYear.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"

@@ -9,18 +9,19 @@
   <link rel="stylesheet" href="./src/tailwindcss/tailwindcssOutput.css">
 </head>
 
-<body class="flex h-screen">
+<body class="flex max-h-screen overflow-hidden">
 
-  <header aria-hidden="false" aria-label="Primary Header" class="bg-background-800 flex-1 max-w-xs h-full flex flex-col items-center p-4">
+  <header aria-hidden="false" aria-label="Primary Header"
+    class="bg-background-800 flex-1 px-6 py-12 max-w-xs h-screen flex flex-col items-center justify-between">
     <figure>
       <img src="./public/profilePic.jpg" alt="profile picture"
-        class="max-w-[150px] aspect-square object-cover rounded-full">
-      <figcaption class="text-center text-3xl text-text-50 font-title font-bold mt-2">Gabriel Ferreira</figcaption>
+        class="max-w-[150px] aspect-square mx-auto object-cover rounded-full">
+      <figcaption class="text-center text-3xl text-text-50 font-title font-bold mt-3">Gabriel Ferreira</figcaption>
+      <span class="text-text-50 text-lg"><i class="font-text text-accent-main">Web Developer</i> from Portugal</span>
     </figure>
-    <p class="text-text-50 text-lg"><i class="font-text text-accent-500">Web Developer</i> from Portugal</p>
     <nav aria-label="Primary Navigation">
-      <ul class="text-text-50 font-text">
-        <li class="mt-4"><a href="#">Home</a></li>
+      <ul id="primary-nav" class="text-text-50 font-text text-xl">
+        <li class="mt-4"><a href="#" class="active">Home</a></li>
         <li class="mt-4"><a href="#">About</a></li>
         <li class="mt-4"><a href="#">Skills</a></li>
         <li class="mt-4"><a href="#">Education</a></li>
@@ -28,9 +29,24 @@
         <li class="mt-4"><a href="#">Contact</a></li>
       </ul>
     </nav>
-
+    <p class="text-center text-secondary-400">&copy; Copyright <span id="rightYear" class="text-accent-main"></span> All
+      Rights Reserved. |
+      Website by Gabriel
+      Ferreira</p>
   </header>
-  <main class="bg-background-950 flex-1 h-full"></main>
+  <main class="bg-background-950 flex-1 h-screen overflow-y-scroll">
+    <section class="h-[200vh]">
+      <div id="hero-section"></div>
+    </section>
+  </main>
+
+  <script src="./src/Header/navLink.js"></script>
+  <script src="./src/Header/copyYear.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"
+    integrity="sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./src/lottie-animation/heroSectionLottie.js"></script>
+
 </body>
 
 </html>

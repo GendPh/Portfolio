@@ -9,18 +9,28 @@
   <link rel="stylesheet" href="./src/tailwindcss/tailwindcssOutput.css">
 </head>
 
-<body class="bg-red-900 h-screen flex items-center justify-center">
+<body class="flex h-screen">
 
-  <div>
-    <h1 class="text-center text-4xl text-white uppercase">Portfolio In Development</h1>
-    <div id="lottie" class="max-w-3xl"></div>
-  </div>
+  <header aria-hidden="false" aria-label="Primary Header" class="bg-background-800 flex-1 max-w-xs h-full flex flex-col items-center p-4">
+    <figure>
+      <img src="./public/profilePic.jpg" alt="profile picture"
+        class="max-w-[150px] aspect-square object-cover rounded-full">
+      <figcaption class="text-center text-3xl text-text-50 font-title font-bold mt-2">Gabriel Ferreira</figcaption>
+    </figure>
+    <p class="text-text-50 text-lg"><i class="font-text text-accent-500">Web Developer</i> from Portugal</p>
+    <nav aria-label="Primary Navigation">
+      <ul class="text-text-50 font-text">
+        <li class="mt-4"><a href="#">Home</a></li>
+        <li class="mt-4"><a href="#">About</a></li>
+        <li class="mt-4"><a href="#">Skills</a></li>
+        <li class="mt-4"><a href="#">Education</a></li>
+        <li class="mt-4"><a href="#">Work</a></li>
+        <li class="mt-4"><a href="#">Contact</a></li>
+      </ul>
+    </nav>
 
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"
-    integrity="sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="./src/lottie-animation/lottie.js"></script>
+  </header>
+  <main class="bg-background-950 flex-1 h-full"></main>
 </body>
 
 </html>

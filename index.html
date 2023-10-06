@@ -19,7 +19,7 @@
   </button>
 
   <header aria-hidden="false" aria-label="Primary Header"
-    class="fixed z-[1000] translate-x-[-100%] bg-background-800 flex-1 px-6 py-12 max-w-xs h-screen flex flex-col items-center justify-between">
+    class="fixed z-[1000] translate-x-[-100%] bg-background-800 flex-1 px-6 py-12 max-w-xs h-screen flex flex-col items-center justify-between gap-2">
 
     <figure>
       <img src="./public/profilePic.jpg" alt="profile picture"
@@ -44,18 +44,18 @@
   <main class="bg-background-main flex-1 h-screen overflow-y-scroll scroll-smooth">
 
     <section class="h-screen relative flex items-center justify-center p-4" id="home">
-      <div id="hero-section" class="absolute inset-0 opacity-10 pointer-events-none"></div>
+      <div id="hero-section" class="absolute top-0 opacity-10 pointer-events-none"></div>
       <div class="flex items-center justify-center flex-wrap">
-        <div>
+        <div id="hero-heading" class="opacity-0">
           <h1 class="text-text-50 text-3xl font-title">I am a <span class="text-accent-main">Web Developer</span></h1>
           <h3 class="text-text-50 text-xl font-title my-2">100% HTML CSS JavaScript</h3>
           <a href="#"
-            class="text-text-50 font-text text-lg border-2 border-solid border-button-main block w-fit p-2 mx-auto rounded-md transition-all duration-150 ease-linear active:scale-90 active:opacity-75">Portfolio</a>
+            class="block p-2 mb-2 opacity-0 font-text text-center uppercase  text-secondary-950 bg-button-main rounded-md transition-all active:scale-95">Portfolio</a>
         </div>
         <div id="hero-face" class="max-w-[270px] pointer-events-none"></div>
       </div>
     </section>
-    <section class="bg-red-100 h-screen" id="2"></section>
+    <section class="h-screen" id="2"></section>
   </main>
 
 
@@ -64,6 +64,7 @@
   <script src="./src/Header/openHeader.js"></script>
   <script src="./src/Header/navLink.js"></script>
   <script src="./src/Header/copyYear.js"></script>
+  <script src="./src/Main/HeroSection/heroGsap.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"
     integrity="sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>

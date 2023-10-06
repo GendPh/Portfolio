@@ -1,15 +1,15 @@
-const heroBg = document.getElementById("hero-section");
-const heroFace = document.getElementById("hero-face");
+const heroBgContainer = document.getElementById("hero-section");
+const heroFaceContainer = document.getElementById("hero-face");
 
 let heroBgLottie = bodymovin.loadAnimation({
-  container: heroBg,
+  container: heroBgContainer,
   path: 'src/lottie-animation/animation/bg-hero.json',
   renderer: 'svg',
   loop: false,
   autoplay: true,
 })
 let heroFaceLottie = bodymovin.loadAnimation({
-  container: heroFace,
+  container: heroFaceContainer,
   path: 'src/lottie-animation/animation/hero-face.json',
   renderer: 'svg',
   loop: true,

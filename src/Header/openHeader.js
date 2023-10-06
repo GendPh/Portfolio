@@ -10,3 +10,10 @@ headerButtonOpen.addEventListener("click", () => {
     gsap.to(header, { x: "-100%", duration: .5 })
   }
 })
+
+document.addEventListener("click", (e) => {
+  if (!header.contains(e.target) && !headerButtonOpen.contains(e.target)) {
+    gsap.to(header, { x: "-100%", duration: .5 })
+    headerButtonOpen.classList.remove("is-active");
+  }
+})

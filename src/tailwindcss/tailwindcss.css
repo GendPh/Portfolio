@@ -6,7 +6,7 @@
 
 @layer base {
   section {
-    @apply text-teal-50 py-6 px-7;
+    @apply text-teal-50 py-6 px-7 overflow-x-hidden;
   }
 }
 

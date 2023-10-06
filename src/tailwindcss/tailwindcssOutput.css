@@ -435,6 +435,7 @@ video {
 }
 
 section {
+  overflow-x: hidden;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   padding-left: 1.75rem;
@@ -1284,38 +1285,6 @@ section {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\] {
-  background-color: url;
-}
-
-.bg-\[url\(\"\"\)\] {
-  background-image: url("");
-}
-
-.bg-\[url\(\"\/public\"\)\] {
-  background-image: url("/public");
-}
-
-.bg-\[url\(\'\'\)\] {
-  background-image: url('');
-}
-
-.bg-\[url\(\'\/\'\)\] {
-  background-image: url('/');
-}
-
-.bg-\[url\(\'\/pub\'\)\] {
-  background-image: url('/pub');
-}
-
-.bg-\[url\(\'\/publi\'\)\] {
-  background-image: url('/publi');
-}
-
-.bg-\[url\(\'\/public\'\)\] {
-  background-image: url('/public');
-}
-
 .bg-\[url\(\'\/public\/bgImage\.jpeg\'\)\] {
   background-image: url('/public/bgImage.jpeg');
 }
@@ -1324,16 +1293,20 @@ section {
   background-image: url('/public/bgImage2.jpeg');
 }
 
-.bg-cover {
-  background-size: cover;
-}
-
 .bg-contain {
   background-size: contain;
 }
 
+.bg-cover {
+  background-size: cover;
+}
+
 .bg-fixed {
   background-attachment: fixed;
+}
+
+.bg-bottom {
+  background-position: bottom;
 }
 
 .bg-center {
@@ -1350,10 +1323,6 @@ section {
 
 .bg-top {
   background-position: top;
-}
-
-.bg-bottom {
-  background-position: bottom;
 }
 
 .bg-no-repeat {
@@ -1846,6 +1815,10 @@ section {
   .md\:gap-x-10 {
     -moz-column-gap: 2.5rem;
          column-gap: 2.5rem;
+  }
+
+  .md\:bg-fixed {
+    background-attachment: fixed;
   }
 
   .md\:text-2xl {

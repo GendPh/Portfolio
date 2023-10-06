@@ -1107,6 +1107,10 @@ section {
   justify-content: space-between;
 }
 
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
 .gap-10 {
   gap: 2.5rem;
 }
@@ -1278,6 +1282,58 @@ section {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[url\] {
+  background-color: url;
+}
+
+.bg-\[url\(\"\"\)\] {
+  background-image: url("");
+}
+
+.bg-\[url\(\"\/public\"\)\] {
+  background-image: url("/public");
+}
+
+.bg-\[url\(\'\'\)\] {
+  background-image: url('');
+}
+
+.bg-\[url\(\'\/\'\)\] {
+  background-image: url('/');
+}
+
+.bg-\[url\(\'\/pub\'\)\] {
+  background-image: url('/pub');
+}
+
+.bg-\[url\(\'\/publi\'\)\] {
+  background-image: url('/publi');
+}
+
+.bg-\[url\(\'\/public\'\)\] {
+  background-image: url('/public');
+}
+
+.bg-\[url\(\'\/public\/bgImage\.jpeg\'\)\] {
+  background-image: url('/public/bgImage.jpeg');
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-fixed {
+  background-attachment: fixed;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 
 .object-contain {

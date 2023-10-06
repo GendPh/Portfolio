@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8">
@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="./node_modules/hamburgers/dist/hamburgers.css">
 </head>
 
-<body class="flex max-h-screen overflow-hidden">
+<body class="flex max-h-screen bg-background-main">
   <button id="openHeader" aria-label="open header"
     class="hamburger hamburger--slider fixed lg:translate-x-[-100%] top-2 left-1 z-[2000]" type="button">
     <span class="hamburger-box">
@@ -19,7 +19,7 @@
   </button>
 
   <header aria-hidden="false" aria-label="Primary Header"
-    class="fixed lg:static z-[1000] translate-x-[-100%] lg:translate-x-0 bg-background-800 flex-1 px-6 py-8 max-w-xs h-screen flex flex-col items-center justify-between gap-2">
+    class="fixed z-[1000] translate-x-[-100%] lg:translate-x-0 bg-background-800 flex-1 px-6 py-8 max-w-xs h-screen flex flex-col items-center justify-between gap-2">
 
     <figure>
       <img src="./public/profilePic.jpg" alt="profile picture"
@@ -30,8 +30,8 @@
     <nav aria-label="Primary Navigation">
       <ul id="primary-nav" class="text-text-50 font-text text-xl">
         <li class="mt-4"><a href="#home" class="active">Home</a></li>
-        <li class="mt-4"><a href="#2">About</a></li>
-        <li class="mt-4"><a href="#">Skills</a></li>
+        <li class="mt-4"><a href="#about">About</a></li>
+        <li class="mt-4"><a href="#skills">Skills</a></li>
         <li class="mt-4"><a href="#">Education</a></li>
         <li class="mt-4"><a href="#">Work</a></li>
         <li class="mt-4"><a href="#">Contact</a></li>
@@ -41,21 +41,157 @@
       Rights Reserved. | Website by Gabriel Ferreira</p>
   </header>
 
-  <main class="bg-background-main flex-1 h-screen overflow-y-scroll scroll-smooth">
+  <main class="flex-1 lg:ml-[320px] ">
 
-    <section class="h-screen relative flex items-center justify-center p-4" id="home">
+    <section class="min-h-screen overflow-hidden relative flex items-center justify-center p-4" id="home">
       <div id="hero-section" class="absolute top-0 opacity-10 pointer-events-none"></div>
       <div class="flex items-center justify-center flex-col gap-2">
         <div id="hero-heading" class="opacity-0">
-          <h1 class="text-text-50 text-3xl md:text-5xl font-title">I am a <span class="text-accent-main">Web Developer</span></h1>
+          <h1 class="text-text-50 text-3xl md:text-5xl font-title">I am a <span class="text-accent-main">Web
+              Developer</span></h1>
           <h3 class="text-text-50 text-xl md:text-2xl font-title my-2">100% HTML CSS JavaScript</h3>
           <a href="#"
             class="block p-2 mb-2 opacity-0 font-text text-center uppercase  text-secondary-950 bg-button-main rounded-md transition-all active:scale-95">Portfolio</a>
         </div>
-        <div id="hero-face" class="max-w-[270px] md:max-w-xs pointer-events-none"></div>
+        <div id="hero-face" class="max-w-[270px] md:max-w-md pointer-events-none"></div>
       </div>
     </section>
-    <section class="h-screen" id="about-me"></section>
+    <section class="text-teal-50 py-12 px-7" id="about">
+      <h3 class="font-title text-end text-xl text-secondary-400">About Me</h3>
+      <h2 class="font-title text-end text-3xl mt-4 mb-6">Who Am I?</h2>
+
+      <p class="font-text text-justify text-lg">
+        <span class="text-accent-main font-title text-xl">Hello there! I'm Gabriel Ferreira</span>, a passionate and
+        creative
+        Web Developer based in <span class="text-accent-main font-title text-xl">Portugal</span>. With a deep love for
+        Web
+        Development, I
+        strive to make a positive impact through my work.
+      </p>
+
+      <p class="font-text text-justify text-lg my-6">
+        My journey began in summer 2022. Since then, I've been on an exciting and enriching quest to continually expand
+        my <a href="#skills" alt="redirect to skills section"
+          class="underline underline-offset-4 text-accent-main font-title text-xl">knowledge
+          and skills</a>.
+      </p>
+
+      <p class="font-text text-justify text-lg mb-6">
+        Outside of my professional life, I love to read fantasy books, the latest was the trilogy <a
+          class="underline underline-offset-4 text-accent-main font-title text-xl"
+          href="https://www.brandonsanderson.com/the-mistborn-saga-the-original-trilogy/"
+          alt="redirect to mistborn page by sanderson" target="_blank"><i>"Mistborn"</i></a> by <a
+          class="underline underline-offset-4 text-accent-main font-title text-xl"
+          href="https://www.brandonsanderson.com/" target="_blank" alt="go to brandon sanderson site">Brandon
+          Sanderson</a>.
+      </p>
+      <p class="font-text text-justify text-lg">
+        I'm always open to new collaborations and exciting opportunities. If you'd like to connect or discuss a project,
+        please don't hesitate to <a href="#" alt="redirect to contact section"
+          class="underline underline-offset-4 text-accent-main font-title text-xl">reach out</a>. Let's create something
+        amazing
+        together!
+      </p>
+    </section>
+    <section class="min-h-screen text-text-50 py-12 px-7" id="skills">
+      <h3 class="font-title text-end text-2xl text-secondary-400">My Specialty</h3>
+      <h2 class="font-title text-end text-5xl mt-4 mb-6">My Skills</h2>
+      <p class="font-text text-xl text-justify">
+        As a web developer, I bring a versatile skill set to the table, honed through years of experience and a passion
+        for creating exceptional digital experiences. Here are some of the key skills I leverage to craft innovative and
+        functional websites
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+        <div class="bg-button-main text-secondary-950 p-4 rounded-lg shadow-text-50 shadow-lg">
+          <figure class="w-fit mx-auto ">
+            <img src="./public/Svg/web1.svg" alt="web icon" class="w-20 mx-auto mb-2">
+            <figcaption class="font-title font-bold text-2xl">Front-End Development</figcaption>
+          </figure>
+          <p class="text-justify text-lg font-text">I specialize in crafting visually appealing and responsive user
+            interfaces
+            using <span class="text-accent-main font-bold">HTML, CSS, and JavaScript</span>.
+            My expertise ensures that websites look stunning and perform flawlessly on various devices and browsers.</p>
+        </div>
+        <div class="bg-button-main text-secondary-950 p-4 rounded-lg shadow-text-50 shadow-lg">
+          <figure class="w-fit mx-auto ">
+            <img src="./public/Svg/js.svg" alt="js icon" class="w-20 mx-auto mb-2">
+            <figcaption class="font-title font-bold text-2xl">JavaScript</figcaption>
+          </figure>
+          <p class="text-justify text-lg font-text">I have a deep understanding of JavaScript, enabling me to create
+            interactive
+            and dynamic web applications. Whether it's enhancing user interactions or implementing complex features, I'm
+            well-versed in harnessing the power of JavaScript.</p>
+        </div>
+        <div class="bg-button-main text-secondary-950 p-4 rounded-lg shadow-text-50 shadow-lg">
+          <figure class="w-fit mx-auto ">
+            <img src="./public/Svg/bootstrap.svg" alt="bootstrap icon" class="w-20 mx-auto mb-2">
+            <figcaption class="font-title font-bold text-2xl">Frameworks and Libraries</figcaption>
+          </figure>
+          <p class="text-justify text-lg font-text">I'm proficient in popular front-end frameworks and libraries such as
+            <span class="text-accent-main font-bold">Tailwindcss, BootStrap, jQuery, Gsap, SplideJs and others</span>.
+            These tools allow me to streamline development,
+            improve
+            code maintainability, and
+            deliver efficient solutions.
+          </p>
+        </div>
+        <div class="bg-button-main text-secondary-950 p-4 rounded-lg shadow-text-50 shadow-lg">
+          <figure class="w-fit mx-auto ">
+            <img src="./public/Svg/php.svg" alt="php icon" class="w-20 mx-auto mb-2">
+            <figcaption class="font-title font-bold text-2xl">Back-End Development</figcaption>
+          </figure>
+          <p class="text-justify text-lg font-text">I have experience with server-side technologies like <span
+              class="text-accent-main font-bold">PHP</span>. This
+            proficiency
+            enables me to build robust back-end systems, and create seamless interactions between the front and back
+            end.</p>
+        </div>
+        <div class="bg-button-main text-secondary-950 p-4 rounded-lg shadow-text-50 shadow-lg">
+          <figure class="w-fit mx-auto ">
+            <img src="./public/Svg/database.svg" alt="database icon" class="w-20 mx-auto mb-2">
+            <figcaption class="font-title font-bold text-2xl"> Database Management</figcaption>
+          </figure>
+          <p class="text-justify text-lg font-text">
+            I'm skilled in database design and management, using technologies like <span
+              class="text-accent-main font-bold">MySQL and MongoDB</span>. I
+            ensure data is organized, accessible, and secure, supporting the functionality of web applications.</p>
+        </div>
+        <div class="bg-button-main text-secondary-950 p-4 rounded-lg shadow-text-50 shadow-lg">
+          <figure class="w-fit mx-auto ">
+            <img src="./public/Svg/github.svg" alt="github icon" class="w-20 mx-auto mb-2">
+            <figcaption class="font-title font-bold text-2xl">Version Control</figcaption>
+          </figure>
+          <p class="text-justify text-lg font-text">I utilize version control systems like <span
+              class="text-accent-main font-bold">Git</span> to collaborate
+            effectively with
+            teams and maintain code integrity throughout the development process.</p>
+        </div>
+        <div class="bg-button-main text-secondary-950 p-4 rounded-lg shadow-text-50 shadow-lg">
+          <figure class="w-fit mx-auto ">
+            <img src="./public/Svg/responsive.svg" alt="responsive icon" class="w-20 mx-auto mb-2">
+            <figcaption class="font-title font-bold text-2xl">Responsive Design</figcaption>
+          </figure>
+          <p class="text-justify text-lg font-text"> I prioritize user experience by <span
+              class="text-accent-main font-bold">
+              implementing responsive design
+              principles
+            </span>.
+            Websites I create adapt gracefully to various screen sizes, providing an optimal viewing experience for all
+            users.</p>
+        </div>
+        <div class="bg-button-main text-secondary-950 p-4 rounded-lg shadow-text-50 shadow-lg">
+          <figure class="w-fit mx-auto ">
+            <img src="./public/Svg/learning.svg" alt="learning icon" class="w-20 mx-auto mb-2">
+            <figcaption class="font-title font-bold text-2xl">Continuous Learning</figcaption>
+          </figure>
+          <p class="text-justify text-lg font-text"> The ever-evolving nature of web development motivates me to stay
+            updated with
+            the latest trends and technologies. I'm committed to lifelong learning, allowing me to deliver cutting-edge
+            solutions.</p>
+        </div>
+      </div>
+    </section>
   </main>
 
 
@@ -64,6 +200,7 @@
   <script src="./src/Header/openHeader.js"></script>
   <script src="./src/Header/navLink.js"></script>
   <script src="./src/Header/copyYear.js"></script>
+  <script src="./src/Main/sectionGsap.js"></script>
   <script src="./src/Main/HeroSection/heroGsap.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"
     integrity="sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg=="

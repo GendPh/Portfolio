@@ -4,6 +4,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700;1,400&family=Josefin+Slab:wght@400;700&display=swap");
 @import url("node_modules/hamburgers/dist/hamburgers.css");
 
+@layer base {
+  section {
+    @apply text-teal-50 py-6 px-7;
+  }
+}
 
 @layer components {
   #primary-nav li > a {
@@ -16,5 +21,30 @@
   }
   #hero-section > svg > g > g {
     @apply h-full;
+  }
+  .section-header {
+    @apply font-title text-end;
+  }
+  .about-me-text {
+    @apply font-text text-justify text-lg;
+  }
+  .skills-container,
+  .education-container {
+    @apply bg-button-main text-secondary-950 p-4 rounded-lg shadow-accent-200 shadow-md;
+    & figure {
+      @apply w-fit mx-auto;
+      & img {
+        @apply w-20 mx-auto mb-2;
+      }
+      & figcaption {
+        @apply font-title font-bold text-2xl;
+      }
+    }
+    & p {
+      @apply text-justify text-lg font-text;
+      & span {
+        @apply text-accent-main font-bold;
+      }
+    }
   }
 }

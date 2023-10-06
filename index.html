@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="./node_modules/hamburgers/dist/hamburgers.css">
 </head>
 
-<body class="flex max-h-screen bg-background-main">
+<body class="flex max-h-screen bg-background-main overflow-x-hidden">
   <button id="openHeader" aria-label="open header"
     class="hamburger hamburger--slider fixed lg:translate-x-[-100%] top-2 left-1 z-[2000]" type="button">
     <span class="hamburger-box">
@@ -32,7 +32,7 @@
         <li class="mt-4"><a href="#home" class="active">Home</a></li>
         <li class="mt-4"><a href="#about">About</a></li>
         <li class="mt-4"><a href="#skills">Skills</a></li>
-        <li class="mt-4"><a href="#">Education</a></li>
+        <li class="mt-4"><a href="#education">Education</a></li>
         <li class="mt-4"><a href="#">Work</a></li>
         <li class="mt-4"><a href="#">Contact</a></li>
       </ul>
@@ -43,24 +43,24 @@
 
   <main class="flex-1 lg:ml-[320px] ">
 
-    <section class="min-h-screen overflow-hidden relative flex items-center justify-center p-4" id="home">
+    <section class=" min-h-screen overflow-hidden relative flex items-center justify-center" id="home">
       <div id="hero-section" class="absolute top-0 opacity-10 pointer-events-none"></div>
       <div class="flex items-center justify-center flex-col gap-2">
         <div id="hero-heading" class="opacity-0">
           <h1 class="text-text-50 text-3xl md:text-5xl font-title">I am a <span class="text-accent-main">Web
               Developer</span></h1>
-          <h3 class="text-text-50 text-xl md:text-2xl font-title my-2">100% HTML CSS JavaScript</h3>
+          <h4 class="text-text-50 text-xl md:text-2xl font-title my-2">100% HTML CSS JavaScript</h4>
           <a href="#"
             class="block p-2 mb-2 opacity-0 font-text text-center uppercase  text-secondary-950 bg-button-main rounded-md transition-all active:scale-95">Portfolio</a>
         </div>
         <div id="hero-face" class="max-w-[270px] md:max-w-md pointer-events-none"></div>
       </div>
     </section>
-    <section class="text-teal-50 py-12 px-7" id="about">
-      <h3 class="font-title text-end text-xl text-secondary-400">About Me</h3>
-      <h2 class="font-title text-end text-3xl mt-4 mb-6">Who Am I?</h2>
+    <section id="about">
+      <h3 class="section-header text-2xl text-secondary-400">About Me</h3>
+      <h2 class="section-header text-5xl my-6">Who Am I?</h2>
 
-      <p class="font-text text-justify text-lg">
+      <p class="about-me-text">
         <span class="text-accent-main font-title text-xl">Hello there! I'm Gabriel Ferreira</span>, a passionate and
         creative
         Web Developer based in <span class="text-accent-main font-title text-xl">Portugal</span>. With a deep love for
@@ -69,14 +69,14 @@
         strive to make a positive impact through my work.
       </p>
 
-      <p class="font-text text-justify text-lg my-6">
+      <p class="about-me-text my-8">
         My journey began in summer 2022. Since then, I've been on an exciting and enriching quest to continually expand
         my <a href="#skills" alt="redirect to skills section"
           class="underline underline-offset-4 text-accent-main font-title text-xl">knowledge
           and skills</a>.
       </p>
 
-      <p class="font-text text-justify text-lg mb-6">
+      <p class="about-me-text mb-8">
         Outside of my professional life, I love to read fantasy books, the latest was the trilogy <a
           class="underline underline-offset-4 text-accent-main font-title text-xl"
           href="https://www.brandonsanderson.com/the-mistborn-saga-the-original-trilogy/"
@@ -85,7 +85,7 @@
           href="https://www.brandonsanderson.com/" target="_blank" alt="go to brandon sanderson site">Brandon
           Sanderson</a>.
       </p>
-      <p class="font-text text-justify text-lg">
+      <p class="about-me-text">
         I'm always open to new collaborations and exciting opportunities. If you'd like to connect or discuss a project,
         please don't hesitate to <a href="#" alt="redirect to contact section"
           class="underline underline-offset-4 text-accent-main font-title text-xl">reach out</a>. Let's create something
@@ -93,104 +93,172 @@
         together!
       </p>
     </section>
-    <section class="min-h-screen text-text-50 py-12 px-7" id="skills">
-      <h3 class="font-title text-end text-2xl text-secondary-400">My Specialty</h3>
-      <h2 class="font-title text-end text-5xl mt-4 mb-6">My Skills</h2>
-      <p class="font-text text-xl text-justify">
+    <section id="skills">
+      <h3 class="section-header text-2xl text-secondary-400">My Specialty</h3>
+      <h2 class="section-header text-5xl my-6">My Skills</h2>
+
+      <p class="skills-text font-text text-xl text-justify">
         As a web developer, I bring a versatile skill set to the table, honed through years of experience and a passion
         for creating exceptional digital experiences. Here are some of the key skills I leverage to craft innovative and
         functional websites
       </p>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-        <div class="bg-button-main text-secondary-950 p-4 rounded-lg shadow-text-50 shadow-lg">
-          <figure class="w-fit mx-auto ">
-            <img src="./public/Svg/web1.svg" alt="web icon" class="w-20 mx-auto mb-2">
-            <figcaption class="font-title font-bold text-2xl">Front-End Development</figcaption>
+      <div class="grid grid-cols-1 gap-y-10 md:grid-cols-2 md:gap-x-10 mt-6">
+        <div class="skills-container">
+          <figure>
+            <img src="./public/Svg/web1.svg" alt="web icon">
+            <figcaption>Front-End Development</figcaption>
           </figure>
-          <p class="text-justify text-lg font-text">I specialize in crafting visually appealing and responsive user
-            interfaces
-            using <span class="text-accent-main font-bold">HTML, CSS, and JavaScript</span>.
+          <p>I specialize in crafting visually appealing and responsive user interfaces using <span>HTML, CSS, and
+              JavaScript</span>.
             My expertise ensures that websites look stunning and perform flawlessly on various devices and browsers.</p>
         </div>
-        <div class="bg-button-main text-secondary-950 p-4 rounded-lg shadow-text-50 shadow-lg">
-          <figure class="w-fit mx-auto ">
-            <img src="./public/Svg/js.svg" alt="js icon" class="w-20 mx-auto mb-2">
-            <figcaption class="font-title font-bold text-2xl">JavaScript</figcaption>
+        <div class="skills-container">
+          <figure>
+            <img src="./public/Svg/js.svg" alt="js icon">
+            <figcaption>JavaScript</figcaption>
           </figure>
-          <p class="text-justify text-lg font-text">I have a deep understanding of JavaScript, enabling me to create
+          <p>I have a deep understanding of JavaScript, enabling me to create
             interactive
             and dynamic web applications. Whether it's enhancing user interactions or implementing complex features, I'm
             well-versed in harnessing the power of JavaScript.</p>
         </div>
-        <div class="bg-button-main text-secondary-950 p-4 rounded-lg shadow-text-50 shadow-lg">
-          <figure class="w-fit mx-auto ">
-            <img src="./public/Svg/bootstrap.svg" alt="bootstrap icon" class="w-20 mx-auto mb-2">
-            <figcaption class="font-title font-bold text-2xl">Frameworks and Libraries</figcaption>
+        <div class="skills-container">
+          <figure>
+            <img src="./public/Svg/bootstrap.svg" alt="bootstrap icon">
+            <figcaption>Frameworks and Libraries</figcaption>
           </figure>
-          <p class="text-justify text-lg font-text">I'm proficient in popular front-end frameworks and libraries such as
-            <span class="text-accent-main font-bold">Tailwindcss, BootStrap, jQuery, Gsap, SplideJs and others</span>.
+          <p>I'm proficient in popular front-end frameworks and libraries such as
+            <span>Tailwindcss, BootStrap, jQuery, Gsap, SplideJs and others</span>.
             These tools allow me to streamline development,
             improve
             code maintainability, and
             deliver efficient solutions.
           </p>
         </div>
-        <div class="bg-button-main text-secondary-950 p-4 rounded-lg shadow-text-50 shadow-lg">
-          <figure class="w-fit mx-auto ">
-            <img src="./public/Svg/php.svg" alt="php icon" class="w-20 mx-auto mb-2">
-            <figcaption class="font-title font-bold text-2xl">Back-End Development</figcaption>
+        <div class="skills-container">
+          <figure>
+            <img src="./public/Svg/php.svg" alt="php icon">
+            <figcaption>Back-End Development</figcaption>
           </figure>
-          <p class="text-justify text-lg font-text">I have experience with server-side technologies like <span
-              class="text-accent-main font-bold">PHP</span>. This
+          <p>I have experience with server-side technologies like <span>PHP</span>. This
             proficiency
             enables me to build robust back-end systems, and create seamless interactions between the front and back
             end.</p>
         </div>
-        <div class="bg-button-main text-secondary-950 p-4 rounded-lg shadow-text-50 shadow-lg">
-          <figure class="w-fit mx-auto ">
-            <img src="./public/Svg/database.svg" alt="database icon" class="w-20 mx-auto mb-2">
-            <figcaption class="font-title font-bold text-2xl"> Database Management</figcaption>
+        <div class="skills-container">
+          <figure>
+            <img src="./public/Svg/database.svg" alt="database icon">
+            <figcaption> Database Management</figcaption>
           </figure>
-          <p class="text-justify text-lg font-text">
-            I'm skilled in database design and management, using technologies like <span
-              class="text-accent-main font-bold">MySQL and MongoDB</span>. I
+          <p>
+            I'm skilled in database design and management, using technologies like <span>MySQL and MongoDB</span>. I
             ensure data is organized, accessible, and secure, supporting the functionality of web applications.</p>
         </div>
-        <div class="bg-button-main text-secondary-950 p-4 rounded-lg shadow-text-50 shadow-lg">
-          <figure class="w-fit mx-auto ">
-            <img src="./public/Svg/github.svg" alt="github icon" class="w-20 mx-auto mb-2">
-            <figcaption class="font-title font-bold text-2xl">Version Control</figcaption>
+        <div class="skills-container">
+          <figure>
+            <img src="./public/Svg/github.svg" alt="github icon">
+            <figcaption>Version Control</figcaption>
           </figure>
-          <p class="text-justify text-lg font-text">I utilize version control systems like <span
-              class="text-accent-main font-bold">Git</span> to collaborate
+          <p>I utilize version control systems like <span>Git</span> to collaborate
             effectively with
             teams and maintain code integrity throughout the development process.</p>
         </div>
-        <div class="bg-button-main text-secondary-950 p-4 rounded-lg shadow-text-50 shadow-lg">
-          <figure class="w-fit mx-auto ">
-            <img src="./public/Svg/responsive.svg" alt="responsive icon" class="w-20 mx-auto mb-2">
-            <figcaption class="font-title font-bold text-2xl">Responsive Design</figcaption>
+        <div class="skills-container">
+          <figure>
+            <img src="./public/Svg/responsive.svg" alt="responsive icon">
+            <figcaption>Responsive Design</figcaption>
           </figure>
-          <p class="text-justify text-lg font-text"> I prioritize user experience by <span
-              class="text-accent-main font-bold">
+          <p> I prioritize user experience by <span>
               implementing responsive design
               principles
             </span>.
             Websites I create adapt gracefully to various screen sizes, providing an optimal viewing experience for all
             users.</p>
         </div>
-        <div class="bg-button-main text-secondary-950 p-4 rounded-lg shadow-text-50 shadow-lg">
-          <figure class="w-fit mx-auto ">
-            <img src="./public/Svg/learning.svg" alt="learning icon" class="w-20 mx-auto mb-2">
-            <figcaption class="font-title font-bold text-2xl">Continuous Learning</figcaption>
+        <div class="skills-container">
+          <figure>
+            <img src="./public/Svg/learning.svg" alt="learning icon">
+            <figcaption>Continuous Learning</figcaption>
           </figure>
-          <p class="text-justify text-lg font-text"> The ever-evolving nature of web development motivates me to stay
+          <p> The ever-evolving nature of web development motivates me to stay
             updated with
             the latest trends and technologies. I'm committed to lifelong learning, allowing me to deliver cutting-edge
             solutions.</p>
         </div>
       </div>
+    </section>
+    <section id="education">
+      <h3 class="section-header text-2xl text-secondary-400">Where i Studied</h3>
+      <h2 class="section-header text-5xl my-6">Education</h2>
+
+      <article class="education-container flex items-center justify-center md:justify-between flex-wrap gap-2">
+        <div>
+          <p><span class="text-accent-main font-title font-bold text-lg">School:</span> <a class="underline"
+              href="https://institutonunalvres.pt/" target="_blank" alt="Institute Nun'Alvres">Institute
+              Nun'Alvres</a></p>
+          <p><span class="text-accent-main font-title font-bold text-lg">Course:</span> <a class="underline"
+              href="https://institutonunalvres.pt/ensino-profissional/" alt="course from nun'alvres" target="_blank">
+              Electronics Technician
+              Automation Computers
+            </a></p>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <a class="transition-all duration-200 active:scale-90"
+            href="https://www.google.com/maps?sca_esv=571342877&rlz=1C5CHFA_enPT1020PT1020&output=search&q=instituto+nun%27alvres&source=lnms&entry=mc&sa=X&ved=2ahUKEwjb8qHRhuKBAxVuQ6QEHU9UDCMQ0pQJegQIYRAB"
+            alt="Map for School" target="_blank">
+            <img src="./public/Svg/map.svg" alt="map icon" class="w-16">
+          </a>
+          <a class="transition-all duration-200 active:scale-90"
+            href="./public/Certification/nunalvresCertification.pdf" target="_blank" alt="Nun'Alvres Certification">
+            <img src="./public/Svg/certificate.svg" alt="certificate icon" class="w-16">
+          </a>
+        </div>
+
+      </article>
+      <article class="education-container my-10 flex items-center justify-center md:justify-between flex-wrap gap-2">
+        <div>
+          <p><span class="text-accent-main font-title font-bold text-lg">School:</span> <a class="underline"
+              href="https://www.masterd.pt/" target="_blank" alt="Master D">Master D</a> (On Going).</p>
+          <p><span class="text-accent-main font-title font-bold text-lg">Course:</span> <a
+              href="https://www.masterd.pt/curso-desenho-programacao-websites" target="_blank"
+              alt="Course from Master D" class="underline">Website Design and Programming</a></p>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <a class="transition-all duration-200 active:scale-90"
+            href="https://www.google.com/maps/place/Master+D+Porto+-+Cursos+e+Forma%C3%A7%C3%A3o/@41.1564475,-8.6126994,17z/data=!3m1!4b1!4m6!3m5!1s0xd2465a0593b536b:0xf3cbe72a79346d8!8m2!3d41.1564475!4d-8.6101245!16s%2Fg%2F1vnrrw_4?entry=ttu"
+            alt="Map for Master D School" target="_blank">
+            <img src="./public/Svg/map.svg" alt="map icon" class="w-16">
+          </a>
+          <img src="./public/Svg/onGoing.png" alt="onGoing icon" class="w-10">
+        </div>
+
+      </article>
+      <article class="education-container my-10 flex items-center justify-center md:justify-between flex-wrap gap-2">
+        <div>
+          <p><span class="text-accent-main font-title font-bold text-lg">School:</span> <a class="underline"
+              href="https://ipca.pt/oferta/tesp/" target="_blank" alt="IPCA">IPCA</a> (On Going).</p>
+          <p><span class="text-accent-main font-title font-bold text-lg">Professional Higher Technical Course:</span> <a
+              href="https://etesp.ipca.pt/curso/desenvolvimento-web-multimedia/" target="_blank"
+              alt="Course from Master D" class="underline">
+              Multimedia Web Development</a></p>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <a class="transition-all duration-200 active:scale-90"
+            href="https://www.google.com/maps/place/IPCA+Famalic%C3%A3o/@41.4399639,-8.4815034,17z/data=!4m6!3m5!1s0xd24f7138c8f549b:0x355bd243ad2eeddf!8m2!3d41.4399639!4d-8.4789285!16s%2Fg%2F11lkkfxy2s?entry=ttu"
+            alt="Map for Master D School" target="_blank">
+            <img src="./public/Svg/map.svg" alt="map icon" class="w-16">
+          </a>
+          <img src="./public/Svg/onGoing.png" alt="onGoing icon" class="w-10">
+        </div>
+
+      </article>
+
+
+
     </section>
   </main>
 

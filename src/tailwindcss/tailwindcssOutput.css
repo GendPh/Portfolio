@@ -1320,8 +1320,16 @@ section {
   background-image: url('/public/bgImage.jpeg');
 }
 
+.bg-\[url\(\'\/public\/bgImage2\.jpeg\'\)\] {
+  background-image: url('/public/bgImage2.jpeg');
+}
+
 .bg-cover {
   background-size: cover;
+}
+
+.bg-contain {
+  background-size: contain;
 }
 
 .bg-fixed {
@@ -1330,6 +1338,22 @@ section {
 
 .bg-center {
   background-position: center;
+}
+
+.bg-left-bottom {
+  background-position: left bottom;
+}
+
+.bg-right-bottom {
+  background-position: right bottom;
+}
+
+.bg-top {
+  background-position: top;
+}
+
+.bg-bottom {
+  background-position: bottom;
 }
 
 .bg-no-repeat {

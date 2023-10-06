@@ -11,15 +11,15 @@
 </head>
 
 <body class="flex max-h-screen overflow-hidden">
-  <button id="openHeader" aria-label="open header" class="hamburger hamburger--slider fixed top-2 left-1 z-[2000]"
-    type="button">
+  <button id="openHeader" aria-label="open header"
+    class="hamburger hamburger--slider fixed lg:translate-x-[-100%] top-2 left-1 z-[2000]" type="button">
     <span class="hamburger-box">
       <span class="hamburger-inner"></span>
     </span>
   </button>
 
   <header aria-hidden="false" aria-label="Primary Header"
-    class="fixed z-[1000] translate-x-[-100%] bg-background-800 flex-1 px-6 py-12 max-w-xs h-screen flex flex-col items-center justify-between gap-2">
+    class="fixed lg:static z-[1000] translate-x-[-100%] lg:translate-x-0 bg-background-800 flex-1 px-6 py-8 max-w-xs h-screen flex flex-col items-center justify-between gap-2">
 
     <figure>
       <img src="./public/profilePic.jpg" alt="profile picture"
@@ -45,17 +45,17 @@
 
     <section class="h-screen relative flex items-center justify-center p-4" id="home">
       <div id="hero-section" class="absolute top-0 opacity-10 pointer-events-none"></div>
-      <div class="flex items-center justify-center flex-wrap">
+      <div class="flex items-center justify-center flex-col gap-2">
         <div id="hero-heading" class="opacity-0">
-          <h1 class="text-text-50 text-3xl font-title">I am a <span class="text-accent-main">Web Developer</span></h1>
-          <h3 class="text-text-50 text-xl font-title my-2">100% HTML CSS JavaScript</h3>
+          <h1 class="text-text-50 text-3xl md:text-5xl font-title">I am a <span class="text-accent-main">Web Developer</span></h1>
+          <h3 class="text-text-50 text-xl md:text-2xl font-title my-2">100% HTML CSS JavaScript</h3>
           <a href="#"
             class="block p-2 mb-2 opacity-0 font-text text-center uppercase  text-secondary-950 bg-button-main rounded-md transition-all active:scale-95">Portfolio</a>
         </div>
-        <div id="hero-face" class="max-w-[270px] pointer-events-none"></div>
+        <div id="hero-face" class="max-w-[270px] md:max-w-xs pointer-events-none"></div>
       </div>
     </section>
-    <section class="h-screen" id="2"></section>
+    <section class="h-screen" id="about-me"></section>
   </main>
 
 

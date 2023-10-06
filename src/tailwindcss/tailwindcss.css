@@ -41,9 +41,9 @@
       }
     }
     & p {
-      @apply text-justify text-lg font-text;
+      @apply text-lg font-text;
       & span {
-        @apply text-accent-main font-bold;
+        @apply text-accent-main font-title font-bold;
       }
     }
   }

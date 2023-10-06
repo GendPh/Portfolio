@@ -67,7 +67,7 @@ educationContainer.forEach(container => {
   gsap.to(container, { y: 40, opacity: 0 })
   ScrollTrigger.create({
     trigger: container,
-    markers: true,
+    markers: false,
     start: "top 92%",
     onEnter: () => {
       gsap.to(container, { y: 0, opacity: 1, duration: .5 })

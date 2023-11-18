@@ -1,0 +1,65 @@
+/* npx tailwindcss -i ./src/css/tailwind/input.css -o ./src/css/tailwind/output.css --watch */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  #input-zone {
+    @apply flex font-Poppins;
+    .input-field {
+      @apply flex-1 lg:flex-auto lg:max-w-[210px] flex flex-col p-2 font-normal tracking-widest;
+      & label {
+        @apply text-Neutral-Smokey-Grey uppercase md:text-xl;
+      }
+      & input {
+        @apply w-full my-2 py-3 pl-3 text-2xl md:text-Input text-Neutral-Off-Black bg-transparent border border-Neutral-Smokey-Grey rounded-lg outline-none focus:border-Primary-Purple focus:caret-Primary-Purple;
+        &::-webkit-inner-spin-button,
+        &::-webkit-outer-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+      }
+      .error {
+        @apply text-Primary-Light-Red text-xs md:text-sm;
+      }
+      &.fail {
+        & label {
+          @apply text-Primary-Light-Red;
+        }
+        & input {
+          @apply border-Primary-Light-Red;
+        }
+      }
+    }
+    &.fail {
+      & label {
+        @apply text-Primary-Light-Red;
+      }
+      & input {
+        @apply border-Primary-Light-Red;
+      }
+    }
+  }
+  #button-group {
+    @apply relative my-4;
+    & hr {
+      height: 2px;
+      @apply bg-Neutral-Smokey-Grey absolute left-0 right-0 top-1/2 translate-y-[-1/2];
+    }
+    #active-btn {
+      aspect-ratio: 1/1;
+      @apply w-16 md:w-20 bg-Primary-Purple hover:bg-Neutral-Off-Black rounded-full flex items-center justify-center mx-auto lg:mx-0 lg:ml-auto relative z-10;
+      & img {
+        @apply w-8 md:w-10;
+      }
+    }
+  }
+  #response {
+    @apply text-[50px] md:text-[60px] text-Neutral-Off-Black font-extrabold font-Poppins italic;
+    & span {
+      @apply text-[60px] md:text-[70px] text-Primary-Purple;
+    }
+  }
+}

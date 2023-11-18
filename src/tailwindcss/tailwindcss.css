@@ -57,10 +57,10 @@
   }
   #work {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1rem;
     .work-projects {
-      @apply text-center text-xl border border-secondary-main rounded-lg p-4 shadow-background-700 shadow-inner;
+      @apply text-center text-xl border border-secondary-main rounded-lg p-2 shadow-background-700 shadow-inner;
       & a {
         @apply underline transition-all duration-100 ease-linear hover:text-text-500;
       }

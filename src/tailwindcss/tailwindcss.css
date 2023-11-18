@@ -8,6 +8,14 @@
   section {
     @apply text-teal-50 py-6 px-7 overflow-x-hidden;
   }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-title;
+  }
 }
 
 @layer components {
@@ -30,7 +38,7 @@
   }
   .skills-container,
   .education-container {
-    @apply bg-button-main text-secondary-950 p-4 rounded-lg shadow-accent-200 shadow-md;
+    @apply mb-10 bg-button-main text-secondary-950 p-4 rounded-lg shadow-accent-200 shadow-md;
     & figure {
       @apply w-fit mx-auto;
       & img {
@@ -44,6 +52,33 @@
       @apply text-lg font-text;
       & span {
         @apply text-accent-main font-title font-bold;
+      }
+    }
+  }
+  #work {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+    .work-projects {
+      @apply text-center text-xl border border-secondary-main rounded-lg p-4 shadow-background-700 shadow-inner;
+      & a {
+        @apply underline transition-all duration-100 ease-linear hover:text-text-500;
+      }
+      & img {
+        width: 100%;
+      }
+      & figcaption {
+        @apply flex items-center justify-center gap-2;
+      }
+    }
+    .icon {
+      display: inline-block;
+      width: 25px;
+      aspect-ratio: 1/1;
+      background: transparent no-repeat center/cover;
+
+      &.github {
+        background-image: url(../../public/Svg/github-mark/github-mark-white.svg);
       }
     }
   }

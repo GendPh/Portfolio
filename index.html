@@ -19,26 +19,29 @@
   </button>
 
   <header aria-hidden="false" aria-label="Primary Header"
-    class="fixed z-[1000] translate-x-[-100%] lg:translate-x-0 bg-background-800 flex-1 px-6 py-8 max-w-xs h-screen flex flex-col items-center justify-between gap-2">
+    class="fixed z-[1000] translate-x-[-100%] lg:translate-x-0 bg-background-800 flex-1 px-2 py-8 max-w-xs h-screen flex flex-col items-center justify-between gap-2">
 
     <figure>
       <img src="./public/profilePic.jpg" alt="profile picture"
-        class="max-w-[150px] aspect-square mx-auto object-cover rounded-full">
-      <figcaption class="text-center text-3xl text-text-50 font-title font-bold mt-3">Gabriel Ferreira</figcaption>
-      <span class="text-text-50 text-lg"><i class="font-text text-accent-main">Web Developer</i> from Portugal</span>
+        class="max-w-[150px] aspect-square mx-auto object-cover rounded-full shadow-sm shadow-text-50">
+      <figcaption class="text-center text-3xl font-title font-bold mt-3">Gabriel Ferreira</figcaption>
+      <span><i class="text-accent-main">Web Developer</i> from Portugal</span>
     </figure>
+
     <nav aria-label="Primary Navigation">
-      <ul id="primary-nav" class="text-text-50 font-text text-xl">
-        <li class="mt-4"><a href="#home" class="active">Home</a></li>
-        <li class="mt-4"><a href="#about">About</a></li>
-        <li class="mt-4"><a href="#skills">Skills</a></li>
-        <li class="mt-4"><a href="#education">Education</a></li>
-        <li class="mt-4"><a href="#work">Work</a></li>
-        <li class="mt-4"><a href="#">Contact</a></li>
+      <ul id="primary-nav">
+        <li class="mb-4"><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li class="my-4"><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li class="my-4"><a href="#work">Work</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </nav>
-    <p class="text-center text-secondary-400">&copy; Copyright <span id="rightYear" class="text-accent-main"></span> All
-      Rights Reserved. | Website by Gabriel Ferreira</p>
+
+    <p class="text-center text-sm text-secondary-400">&copy; Copyright <span id="rightYear"
+        class="text-accent-main text-sm"></span> | All
+      Rights Reserved | Website by Gabriel Ferreira</p>
   </header>
 
   <main class="flex-1 lg:ml-[320px]">
@@ -46,65 +49,51 @@
     <section class=" min-h-screen overflow-hidden relative flex justify-evenly items-center flex-col" id="home">
       <div id="hero-section" class="absolute top-0 opacity-10 pointer-events-none"></div>
       <div id="hero-heading" class="opacity-0 mt-11 mb-2">
-        <h1 class="text-text-50 text-3xl md:text-5xl font-title">I am a <span class="text-accent-main">Web
+        <h1 class="text-3xl md:text-5xl">I am a <span class="text-accent-main text-3xl md:text-5xl">Web
             Developer</span></h1>
-        <h4 class="text-text-50 text-xl md:text-2xl font-title my-2">100% HTML CSS JavaScript</h4>
-        <a href="#"
-          class="block p-2 mb-2 opacity-0 font-text text-center uppercase  text-secondary-950 bg-button-main rounded-md transition-all active:scale-95">Portfolio</a>
+        <h2 class="text-2xl md:text-3xl my-4">100% HTML CSS JavaScript</h2>
       </div>
       <div id="hero-face" class="max-w-sm md:max-w-md pointer-events-none"></div>
     </section>
-    <section id="about" class="bg-[url('/public/bgImage.jpeg')] bg-no-repeat bg-center bg-cover md:bg-fixed ">
-      <h3 class="section-header text-2xl text-secondary-400">About Me</h3>
-      <h2 class="section-header text-5xl mt-6 mb-10">Who Am I?</h2>
+    <section id="about">
+      <h4>About Me</h4>
+      <h3>Who Am I?</h3>
 
-      <p class="about-me-text">
-        <span class="text-accent-main font-title text-xl">Hello there! I'm Gabriel Ferreira</span>, a passionate and
-        creative
-        Web Developer based in <span class="text-accent-main font-title text-xl">Portugal</span>. With a deep love for
-        Web
-        Development, I
-        strive to make a positive impact through my work.
+      <p class="mb-4">
+        Hi, I'm <span>Gabriel Ferreira</span>, a dedicated <span>Web Developer</span> with <span>1 year</span> of
+        experience.
       </p>
 
-      <p class="about-me-text my-8">
-        My journey began in summer 2022. Since then, I've been on an exciting and enriching quest to continually expand
-        my <a href="#skills" alt="redirect to skills section"
-          class="underline underline-offset-4 text-accent-main font-title text-xl">knowledge
-          and skills</a>.
+      <p>
+        I thrive on challenges, approaching each project with a commitment to innovative solutions and user-centric
+        design. My work reflects a blend of technical expertise and a passion for creating seamless, engaging online
+        experiences.
       </p>
 
-      <p class="about-me-text mb-8">
-        Outside of my professional life, I love to read fantasy books, the latest was the <a
-          class="underline underline-offset-4 text-accent-main font-title text-xl"
-          href="https://www.brandonsanderson.com/the-mistborn-saga-the-original-trilogy/"
-          alt="redirect to mistborn page by sanderson" target="_blank"><i>"Mistborn"</i></a> trilogy by <a
-          class="underline underline-offset-4 text-accent-main font-title text-xl"
-          href="https://www.brandonsanderson.com/" target="_blank" alt="go to brandon sanderson site">Brandon
-          Sanderson</a>.
+      <p class="my-6">
+        Beyond my professional life, I enjoy to <span>read books and play games</span>. This portfolio offers a glimpse
+        into my world,
+        showcasing the synergy of skills, passion, and dedication that I bring to every endeavor.
       </p>
-      <p class="about-me-text">
-        I'm always open to new collaborations and exciting opportunities. If you'd like to connect or discuss a project,
-        please don't hesitate to <a href="#" alt="redirect to contact section"
-          class="underline underline-offset-4 text-accent-main font-title text-xl">reach out</a>. Let's create something
-        amazing
-        together!
+      <p>
+        Thanks for visiting! I look forward to connecting with you.
       </p>
+
     </section>
     <section id="skills">
-      <h3 class="section-header text-2xl text-secondary-400">My Specialty</h3>
-      <h2 class="section-header text-5xl mt-6 mb-10">My Skills</h2>
+      <h4>My Specialty</h4>
+      <h3>My Skills</h3>
 
-      <p class="skills-text font-text text-xl text-justify my-10">
-        As a web developer, I bring a versatile skill set to the table, honed through years of experience and a passion
-        for creating exceptional digital experiences. Here are some of the key skills I leverage to craft innovative and
+      <p class="skills-text text-justify my-10">
+        As a web developer, I bring a versatile skill set to the table, honed through experience and a passion for
+        creating exceptional digital experiences. Here are some of the key skills I leverage to craft innovative and
         functional websites
       </p>
 
-      <div class="grid grid-cols-1 gap-y-10 md:grid-cols-2 md:gap-x-10 mt-6">
-        <div class="skills-container">
+      <div class="container">
+        <div class="inner-container">
           <figure>
-            <img src="./public/Svg/web1.svg" alt="web icon">
+            <img src="./public/Svg/web1.svg" alt="web icon" class="skills">
             <figcaption>Front-End Development</figcaption>
           </figure>
           <p class="text-justify">I specialize in crafting visually appealing and responsive user interfaces using
@@ -113,9 +102,9 @@
             My expertise ensures that websites look stunning and perform flawlessly on various devices and browsers.
           </p>
         </div>
-        <div class="skills-container">
+        <div class="inner-container">
           <figure>
-            <img src="./public/Svg/js.svg" alt="js icon">
+            <img src="./public/Svg/js.svg" alt="js icon" class="skills">
             <figcaption>JavaScript</figcaption>
           </figure>
           <p class="text-justify">I have a deep understanding of JavaScript, enabling me to create
@@ -123,9 +112,9 @@
             and dynamic web applications. Whether it's enhancing user interactions or implementing complex features, I'm
             well-versed in harnessing the power of JavaScript.</p>
         </div>
-        <div class="skills-container">
+        <div class="inner-container">
           <figure>
-            <img src="./public/Svg/bootstrap.svg" alt="bootstrap icon">
+            <img src="./public/Svg/bootstrap.svg" alt="bootstrap icon" class="skills">
             <figcaption>Frameworks and Libraries</figcaption>
           </figure>
           <p class="text-justify">I'm proficient in popular front-end frameworks and libraries such as
@@ -136,9 +125,9 @@
             deliver efficient solutions.
           </p>
         </div>
-        <div class="skills-container">
+        <div class="inner-container">
           <figure>
-            <img src="./public/Svg/php.svg" alt="php icon">
+            <img src="./public/Svg/php.svg" alt="php icon" class="skills">
             <figcaption>Back-End Development</figcaption>
           </figure>
           <p class="text-justify">I have experience with server-side technologies like <span>PHP</span>. This
@@ -146,27 +135,27 @@
             enables me to build robust back-end systems, and create seamless interactions between the front and back
             end.</p>
         </div>
-        <div class="skills-container">
+        <div class="inner-container">
           <figure>
-            <img src="./public/Svg/database.svg" alt="database icon">
+            <img src="./public/Svg/database.svg" alt="database icon" class="skills">
             <figcaption> Database Management</figcaption>
           </figure>
           <p class="text-justify">
             I'm skilled in database design and management, using technologies like <span>MySQL and MongoDB</span>. I
             ensure data is organized, accessible, and secure, supporting the functionality of web applications.</p>
         </div>
-        <div class="skills-container">
+        <div class="inner-container">
           <figure>
-            <img src="./public/Svg/github.svg" alt="github icon">
+            <img src="./public/Svg/github.svg" alt="github icon" class="skills">
             <figcaption>Version Control</figcaption>
           </figure>
           <p class="text-justify">I utilize version control systems like <span>Git</span> to collaborate
             effectively with
             teams and maintain code integrity throughout the development process.</p>
         </div>
-        <div class="skills-container">
+        <div class="inner-container">
           <figure>
-            <img src="./public/Svg/responsive.svg" alt="responsive icon">
+            <img src="./public/Svg/responsive.svg" alt="responsive icon" class="skills">
             <figcaption>Responsive Design</figcaption>
           </figure>
           <p class="text-justify"> I prioritize user experience by <span>
@@ -176,9 +165,9 @@
             Websites I create adapt gracefully to various screen sizes, providing an optimal viewing experience for all
             users.</p>
         </div>
-        <div class="skills-container">
+        <div class="inner-container">
           <figure>
-            <img src="./public/Svg/learning.svg" alt="learning icon">
+            <img src="./public/Svg/learning.svg" alt="learning icon" class="skills">
             <figcaption>Continuous Learning</figcaption>
           </figure>
           <p class="text-justify"> The ever-evolving nature of web development motivates me to stay
@@ -188,85 +177,95 @@
         </div>
       </div>
     </section>
-    <section id="education" class="bg-[url('/public/bgImage2.jpeg')] bg-no-repeat bg-cover md:bg-fixed">
-      <h3 class="section-header text-2xl text-secondary-400">Where i Studied</h3>
-      <h2 class="section-header text-5xl mt-6 mb-10">Education</h2>
+    <section id="education">
 
-      <article class="education-container flex items-center justify-center md:justify-between flex-wrap gap-2">
-        <div>
-          <p><span>School:</span> <a class="underline" href="https://institutonunalvres.pt/" target="_blank"
-              alt="Institute Nun'Alvres">Institute
-              Nun'Alvres</a></p>
-          <p><span>Course:</span> <a class="underline" href="https://institutonunalvres.pt/ensino-profissional/"
-              alt="course from nun'alvres" target="_blank">
-              Electronics Technician
-              Automation Computers
-            </a></p>
-        </div>
+      <h4>Where i Studied</h4>
+      <h3>Education</h3>
+      <div class="container">
+        <article class="inner-container">
+          <div class="text-start mb-4">
+            <p><span>School</span>: <a href="https://institutonunalvres.pt/" target="_blank"
+                alt="Institute Nun'Alvres">Institute
+                Nun'Alvres</a></p>
+            <p><span>Course</span>: <a href="https://institutonunalvres.pt/ensino-profissional/"
+                alt="course from nun'alvres" target="_blank">
+                Electronics Technician
+                Automation Computers
+              </a></p>
+          </div>
 
-        <div class="flex items-center gap-2">
-          <a class="transition-all duration-200 active:scale-90"
-            href="https://www.google.com/maps?sca_esv=571342877&rlz=1C5CHFA_enPT1020PT1020&output=search&q=instituto+nun%27alvres&source=lnms&entry=mc&sa=X&ved=2ahUKEwjb8qHRhuKBAxVuQ6QEHU9UDCMQ0pQJegQIYRAB"
-            alt="Map for School" target="_blank">
-            <img src="./public/Svg/map.svg" alt="map icon" class="w-16">
-          </a>
-          <a class="transition-all duration-200 active:scale-90"
-            href="./public/Certification/nunalvresCertification.pdf" target="_blank" alt="Nun'Alvres Certification">
-            <img src="./public/Svg/certificate.svg" alt="certificate icon" class="w-16">
-          </a>
-        </div>
+          <div class="mx-auto w-fit flex items-center gap-2">
+            <a class="transition-all duration-200 active:scale-90"
+              href="https://www.google.com/maps?sca_esv=571342877&rlz=1C5CHFA_enPT1020PT1020&output=search&q=instituto+nun%27alvres&source=lnms&entry=mc&sa=X&ved=2ahUKEwjb8qHRhuKBAxVuQ6QEHU9UDCMQ0pQJegQIYRAB"
+              alt="Map for School" target="_blank">
+              <img src="./public/Svg/map.svg" alt="map icon" class="education">
+            </a>
+            <a class="transition-all duration-200 active:scale-90"
+              href="./public/Certification/nunalvresCertification.pdf" target="_blank" alt="Nun'Alvres Certification">
+              <img src="./public/Svg/certificate.svg" alt="certificate icon" class="education">
+            </a>
+          </div>
 
-      </article>
-      <article class="education-container flex items-center justify-center md:justify-between flex-wrap gap-2">
-        <div>
-          <p><span>School:</span> <a class="underline" href="https://ipca.pt/oferta/tesp/" target="_blank"
-              alt="IPCA">IPCA</a> (On Going).</p>
-          <p><span>Professional Higher Technical Course:</span> <a
-              href="https://etesp.ipca.pt/curso/desenvolvimento-web-multimedia/" target="_blank"
-              alt="Course from Master D" class="underline">
-              Multimedia Web Development</a></p>
-        </div>
+        </article>
+        <article class="inner-container">
+          <div class="text-start mb-4">
+            <p><span>School</span>: <a href="https://ipca.pt/oferta/tesp/" target="_blank" alt="IPCA">IPCA</a> (On
+              Going).</p>
+            <p><span>Professional Higher Technical Course:</span> <a
+                href="https://etesp.ipca.pt/curso/desenvolvimento-web-multimedia/" target="_blank"
+                alt="Course from IPCA">
+                Multimedia Web Development</a></p>
+          </div>
 
-        <div class="flex items-center gap-2">
-          <a class="transition-all duration-200 active:scale-90"
-            href="https://www.google.com/maps/place/IPCA+Famalic%C3%A3o/@41.4399639,-8.4815034,17z/data=!4m6!3m5!1s0xd24f7138c8f549b:0x355bd243ad2eeddf!8m2!3d41.4399639!4d-8.4789285!16s%2Fg%2F11lkkfxy2s?entry=ttu"
-            alt="Map for Master D School" target="_blank">
-            <img src="./public/Svg/map.svg" alt="map icon" class="w-16">
-          </a>
-          <img src="./public/Svg/onGoing.png" alt="onGoing icon" class="w-10">
-        </div>
+          <div class="mx-auto w-fit flex items-center gap-2">
+            <a class="transition-all duration-200 active:scale-90"
+              href="https://www.google.com/maps/place/IPCA+Famalic%C3%A3o/@41.4399639,-8.4815034,17z/data=!4m6!3m5!1s0xd24f7138c8f549b:0x355bd243ad2eeddf!8m2!3d41.4399639!4d-8.4789285!16s%2Fg%2F11lkkfxy2s?entry=ttu"
+              alt="Map for Master D School" target="_blank">
+              <img src="./public/Svg/map.svg" alt="map icon" class="education">
+            </a>
+            <img src="./public/Svg/onGoing.png" alt="onGoing icon" class="education">
+          </div>
 
-      </article>
+        </article>
+      </div>
 
 
 
     </section>
-    <section id="work" class="">
-      <div class="work-projects">
-        <h4><a href="https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv"
-            target="_blank" title="Frontend Challenge Website">Frontend
-            Mentor Challenge</a></h4>
-        <figure>
-          <img src="./public/Works/newsletter.png" alt="newsletter">
-          <figcaption>
-            <a href="./WorkProjects/newsletter-sign-up-with-success-message-main/index.html" target="_blank">Newsletter
-              Form</a> <a href="https://github.com/GendPh/newsletter-sign-up-with-success-message-main" target="_blank"
-              class="icon github"></a>
-          </figcaption>
-        </figure>
-      </div>
-      <div class="work-projects">
-        <h4><a href="https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q" target="_blank"
-            title="Frontend Challenge Website">Frontend
-            Mentor Challenge</a></h4>
-        <figure>
-          <img src="./public/Works/ageCalculator.png" alt="Age Calculator Project">
-          <figcaption>
-            <a href="./WorkProjects/age-calculator/index.html" target="_blank">Age
-              Calculator</a> <a href="https://github.com/GendPh/Age-Calculator-App" target="_blank"
-              class="icon github"></a>
-          </figcaption>
-        </figure>
+
+
+    <section id="work">
+      <h4>Projects performed</h4>
+      <h3>Works</h3>
+      <div class="container">
+
+        <div class="inner-container">
+          <h5><a href="https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv"
+              target="_blank" title="Frontend Challenge Website">Frontend
+              Mentor Challenge</a></h5>
+          <figure>
+            <img src="./public/Works/newsletter.png" alt="newsletter">
+            <figcaption class="projects">
+              <a href="./WorkProjects/newsletter-sign-up-with-success-message-main/index.html"
+                target="_blank">Newsletter
+                Form</a> <a href="https://github.com/GendPh/newsletter-sign-up-with-success-message-main"
+                target="_blank" class="icon github"></a>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="inner-container">
+          <h5><a href="https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q" target="_blank"
+              title="Frontend Challenge Website">Frontend
+              Mentor Challenge</a></h5>
+          <figure>
+            <img src="./public/Works/ageCalculator.png" alt="Age Calculator Project">
+            <figcaption class="projects">
+              <a href="./WorkProjects/age-calculator/index.html" target="_blank">Age
+                Calculator</a> <a href="https://github.com/GendPh/Age-Calculator-App" target="_blank"
+                class="icon github"></a>
+            </figcaption>
+          </figure>
+        </div>
       </div>
     </section>
   </main>
